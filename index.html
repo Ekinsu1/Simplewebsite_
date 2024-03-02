@@ -1,0 +1,72 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koçak Vinç</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>KOÇAK VİNÇ</h1>
+    </header>
+
+    <nav>
+        <a onclick="openTab('anasayfa')">Anasayfa</a>
+        <a onclick="openTab('hakkimizda')">Hakkımızda</a>
+        <button onclick="toggleServices()">Hizmetler</button>
+        <a onclick="openTab('iletisim')">İletişim</a>
+    </nav>
+
+    <main>
+        <section id="anasayfa" class="tab-content">
+            <h2>Anasayfa</h2>
+            <p>Merhaba, bu basit web sitesinin anasayfasındasınız.</p>
+        </section>
+
+        <section id="hakkimizda" class="tab-content">
+            <div class="container">
+                <h1>Koçak Vinç Kimdir</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi minus ipsa consequatur ex non molestias, fugiat earum deleniti dignissimos, consectetur optio voluptate. Facere dolore iusto, esse nemo saepe earum nobis.
+                </p>
+            </div>
+        </section>
+
+        <section id="hizmetler" class="tab-content">
+            <div class="container">
+                <h2>Hizmetler</h2>
+                <div id="serviceContainer" class="container">
+                    <button onclick="openServiceTab('service1')">Hizmet 1</button>
+                    <button onclick="openServiceTab('service2')">Hizmet 2</button>
+                    <!-- Diğer hizmet butonları... -->
+                    <div id="serviceContent">
+                        <div id="service1" class="service-tab">
+                            <h3>Hizmet 1</h3>
+                            <p>İçerik Hizmet 1</p>
+                        </div>
+                        <div id="service2" class="service-tab">
+                            <h3>Hizmet 2</h3>
+                            <p>İçerik Hizmet 2</p>
+                        </div>
+                        <!-- Diğer hizmet içerikleri... -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="iletisim" class="tab-content">
+            <h2>İletişim</h2>
+            <p>Bizimle iletişime geçmek için buradaki bilgileri kullanabilirsiniz.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Basit Web Sitesi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
